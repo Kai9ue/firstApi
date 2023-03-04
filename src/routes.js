@@ -6,4 +6,9 @@ module.exports = [
     method: 'GET',
     handler: UserController.listUsers,  //função que quero executar toda vez que essa rota for chamada
   },
+  {
+    endpoint: '/users/:id',
+    method: 'GET',
+    handler: UserController.getUserById,
+  },
 ];
